@@ -1,0 +1,65 @@
+@charset "UTF8";
+@font-face {
+    font-family: 'passion One';
+    src: url(../fontes/Passion-One/PassionOne-Regular.ttf);
+}
+@font-face {
+    font-family:'Sriracha';
+    src: url(../fontes/Sriracha/Sriracha-Regular.ttf);
+}
+:root{
+    --fonte-padrão: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-destaque: 'Passion one', sans-serif;
+    --fonte-conteúdo: 'Sriracha', sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    min-height: 100vh; /*tamanho minimo da viewport do corpo do site seá 100% (seria igual a 100% no lugar de 100vh)*/
+    background-color: darkgray;
+    font-family: var(--fonte-padrão);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+}
+header h1{
+    font-variant: small-caps;/*colocando o texto todo em maiusculo,utilizou-se este código por ser menos chamativo colocando as primeiras letras maiores,outra opção seria usar: text-transform: uppercase;(o que colocaria todo o texto em maiusculo) */
+    font-family: var(--fonte-destaque);
+    font-size: 8vw;/*utilizou-se o vw(largura da tela) para q o conteúdo seja adaptavel ao tamanho da tela)*/
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    line-height: 2em;
+    padding: 10vh 0px 10vh 30px;
+    font-family: var(--fonte-conteúdo);
+    font-size: 2.2vw;
+}
+.normal{
+    background-color: white;
+}
+.imagem{
+    color: white;
+}
+.imagem>p{
+    background-color: rgba(0, 0, 0, 0.27);
+    display: inline-block;
+    padding: 7px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
