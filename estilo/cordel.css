@@ -46,6 +46,9 @@ section{
     font-family: var(--fonte-conteúdo);
     font-size: 2.2vw;
 }
+section>p{
+    padding-bottom: 15px;
+}
 .normal{
     background-color: white;
 }
